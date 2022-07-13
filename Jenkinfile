@@ -1,8 +1,8 @@
 pipeline {
-  agent any
+  agent none
   
   stages {
-    stage ('Maven install) {
+    stage ('Maven install') {
       agent {
         docker {
           image 'maven:latest'
